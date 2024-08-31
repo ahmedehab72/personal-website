@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background-color:#f0f0f0;
+    margin: 0px;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    display: flex;   /*   become behind in one line */
+    /* padding: 10px 200px; */
+   align-items: center;
+     justify-content: space-between;
+   
+    
+}
+.headname{
+    color: blue;
+    text-decoration: none;
+    font-size:32px;
+    font-weight: 700;
+    text-align: center;
+    padding-left: 200px;
+
+}
+.headobj{
+    padding :10px 150px ;
+ }
+
+.headobj a{
+    color:blue;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    padding-right:20px;
+    
+}
+.headobj a:hover{
+    color: blueviolet;
+}
+section{
+    width: 100%
+    
+  
+}
+.sec{
+    padding: 150px 200px  ;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+   
+    background: url(picture/picc1.png) no-repeat rgb(5, 0, 58) ;
+    background-size: cover;
+    background-position-x: 600px;
+    background-position-y:50px;
+  background-size: 130vh;
+  background-attachment: fixed;
+
+   
+    
+}
+.sec h5{
+ color: white ;
+ font-size: larger;
+ padding-bottom: 10px;
+
+}
+
+.sec h2{
+ color: rgb(45, 86, 208) ;
+ font-size: 50px;
+
+}
+
+.sec h3{
+ color: white ;
+ font-size: 25px;
+ padding-bottom: 20px;
+letter-spacing: 1px;
+}
+.btnn{
+color: white;
+background-color: rgb(45, 86, 208) ;
+text-decoration: none;
+font-size: 18px;
+font-weight: 600;
+display: inline-block;
+padding: 0.8em 1.65em;
+border-radius: 15px;
+letter-spacing: 1px;
+margin-bottom: 40px;
+transition: 0.7s ease;
+}
+.btnn:hover{
+    background-color:blue ;
+    transform: scale(1.1);
+}
+ 
+.socialicon a{
+    color: white ; 
+    font-size: 20px;
+    padding-right: 25px;
+    
+}
+ .title{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 800;
+    color: blue; 
+    margin-top: 50px;
+    margin-bottom: 30px;
+ }
+
+ .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;    /* behind in row */ 
+    flex-wrap: wrap;         /* when small screen cards in row become in new line */
+
+    }
+.card{
+    background-color: white;
+    width: 350px; 
+    box-shadow: 0 5px  25px rgba(1 1 1 / 25%);
+    border-radius: 10px;
+    padding: 25px; 
+    margin: 15px; 
+    transition: 0.7s ease ;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+.icon {
+    text-align: center;
+    font-size: 80px;
+}
+.icon a{
+    color: blue;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+   
+    color: blue;
+    font-size: 30px;
+    padding: 15px;
+
+}
+.info p{
+    font-size: 18px; 
+}
+
+
+.Projects {
+    background-color: rgb(5, 0, 58) ;
+}
+.Projects .content{
+    margin-top: 50px;
+}
+.cardpro {
+    border: 3px solid white;
+    border-radius: 10px;
+   min-height: 300px;
+    width: 400px;
+    overflow: hidden;
+    background-color: white; 
+    transition: 0.7s ease;
+    margin:20px;
+
+}
+.cardpro:hover{
+    transform: scale(1.1);
+}
+
+
+.infopro{
+    background-color: white;
+    /* width: 100%; */
+    padding: 15px;
+}
+.imgpro img{
+    width: 100%;
+
+}
+
+.imgpro:hover{
+    opacity: 0.9;
+}
+.infoproject{
+    color:black;
+   padding: 2px;
+
+}
+.titlepro {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+
+}
+.Moredetials{
+    text-decoration: none;
+    color: blue;
+
+}
+.Moredetials:hover{
+    color: blueviolet ;
+    transform: scale(1.07);
+}
+
+
+.contact .icon{
+    font-size: 50px;
+}
+.Phonecon{
+    text-align: center;
+    color: blue;
+font-size: 20px;
+padding: 10px;
+}
+
+.numphonecon{
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.foot{
+    background-color:  rgb(5, 0, 58) ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.copyri{
+    color:white;
+    font-size: 16px;
+
+}
+.copyri span{
+    color: rgb(63, 101, 217);
+}
+.foot .socialicon a{
+    padding: 7px;
+}
+
+
+
+
+
+@media(max-width:1024px)
+{
+    .headname{
+       
+        font-size:18px;
+        
+        padding-left: 30px;
+    
+    }
+    .headobj{
+        padding :5px 30px ;
+     }
+    
+    .headobj a{
+        font-size: 12px;
+        font-weight: 500;
+        padding-right:5px;
+        
+    }
+    
+    .sec{
+        padding: 40px 30px  ;
+      
+       
+        background-position-x:-12vh;
+        background-position-y:25px;
+        
+    }
+    .sec h5{
+ 
+     font-size: 12px;
+     padding-bottom: 8px;
+    
+    }
+    
+    .sec h2{
+    
+     font-size: 40px;
+    
+    }
+    
+    .sec h3{
+   
+     font-size: 18px;
+     padding-bottom: 10px;
+   
+    }
+    .btnn{
+   
+   
+    font-size: 20px;
+
+   
+    padding: 0.8em 1.6em;
+   
+   
+    margin-bottom: 15px;
+   
+    }
+     
+    .socialicon a{
+      
+        font-size: 20px;
+        padding-right: 8px;
+        
+    }
+}
